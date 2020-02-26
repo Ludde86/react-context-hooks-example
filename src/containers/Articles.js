@@ -11,11 +11,7 @@ const Articles = () => {
 
 	// here we now consume the context
 	const { articles } = useContext(ArticleContext);
-	return (
-		<div className="container mt-5">
-			{articles.map((article) => <Article key={article.id} article={article} />)}
-		</div>
-	);
+	return <div>{articles.map((article) => <Article key={article.id} article={article} />)}</div>;
 };
 
 export default Articles;

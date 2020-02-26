@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { ArticleContext } from '../../context/articleContext';
+import './AddArticle.css';
 
 const AddArticle = () => {
 	/* here we now consume the context */
@@ -25,7 +26,7 @@ const AddArticle = () => {
 		<form onSubmit={addNewArticle} className="add-article">
 			<input type="text" id="title" placeholder="Title" onChange={handleArticleData} />
 			<input type="text" id="body" placeholder="Body" onChange={handleArticleData} />
-			<button type="submit">Add article</button>
+			<button>Add article</button>
 		</form>
 	);
 };

@@ -6,8 +6,6 @@ export const ArticleContext = createContext();
 
 // we define a function which will help us distribute the data through the Provider
 const ArticleProvider = ({ children }) => {
-	console.log('children in [articleContext]: ', children);
-
 	// const [ articles, setArticles ] = useState([
 
 	// we've to pass our reducer function to it and as second argument the initial state of our application

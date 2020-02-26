@@ -1,5 +1,5 @@
 import React from 'react';
-//import './Article.css';
+import './Article.css';
 
 const article = ({ article }) => (
 	<div className="article">
